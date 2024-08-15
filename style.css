@@ -106,7 +106,8 @@ body {
     text-align: center;
   }
   .site-header {
-    background-image: none;
+    background-image: url("img/churchill.jpg");
+    background-position: center;
     padding: 50px;
     margin: auto;
   }
@@ -119,8 +120,14 @@ body {
     margin-top: 15px;
   }
   .col {
-    width: 65%;
+    width: 100%;
     text-align: center;
     margin: auto;
+  }
+  .section-divider {
+    text-align: center;
+  }
+  .churchill-details {
+    width: 100%;
   }
 }

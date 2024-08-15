@@ -1,0 +1,126 @@
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: #2c3e50;
+}
+
+.navbar {
+  background-color: #2c3e50;
+  color: white;
+  padding: 25px;
+}
+
+#picture-text-emphasis {
+  font-size: 6vw;
+  font-weight: bolder;
+}
+
+/* The picture of Churchill */
+.site-header {
+  background-image: url("img/churchill.jpg");
+  background-position: top 35% right 50%;
+  max-width: 100%;
+  height: auto;
+  padding: 150px;
+  margin: auto;
+}
+
+/* The text on the picture of Churchill */
+.site-header-text {
+  text-align: center;
+  width: 35%;
+}
+
+/* The dividers between the text content towards the bottom of the page */
+.section-divider {
+  padding: 25px;
+  font-size: 1.5rem;
+}
+
+.three-col-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  gap: 1em; /* Adds space between columns */
+}
+
+.col {
+  text-align: center;
+  padding: 1em;
+  flex: 1; /* Distributes space equally among columns */
+  border-radius: 5px;
+  border: 1px solid #bdc3c7;
+  background-color: #ecf0f1;
+}
+
+.small-img {
+  height: 50%;
+  width: 75%;
+  border-radius: 5px;
+}
+
+.churchill-details {
+  width: 65%;
+  text-align: center;
+  margin: auto;
+}
+.detail-container {
+  margin-top: 25px;
+  padding: 25px;
+}
+.detail-header {
+  background-color: #34495e;
+  color: white;
+  padding: 1rem;
+  font-size: 1.75rem;
+}
+
+.detail-content {
+  text-align: left;
+}
+
+/* Minor Changes to formatting once the screen gets to 1280 pixels */
+@media (width <= 1280px) {
+  .navbar {
+    text-align: center;
+  }
+  .site-header {
+    background-image: url("img/churchill.jpg");
+    padding: 50px;
+    margin: auto;
+  }
+  .three-col-container {
+    display: block;
+    margin-top: 15px;
+  }
+  .col {
+    width: 65%;
+    text-align: center;
+    margin: auto;
+  }
+}
+
+/* More Drastic changes to formatting once the screen gets to 700 pixels */
+@media (width <= 700px) {
+  .navbar {
+    text-align: center;
+  }
+  .site-header {
+    background-image: none;
+    padding: 50px;
+    margin: auto;
+  }
+  .site-header-text {
+    text-align: center;
+    width: 100%;
+  }
+  .three-col-container {
+    display: block;
+    margin-top: 15px;
+  }
+  .col {
+    width: 65%;
+    text-align: center;
+    margin: auto;
+  }
+}
